@@ -253,6 +253,23 @@ nav a{
     border-radius: 10px;
 }
 
+/*Unidades*/
+
+.templateuni{
+  
+    text-align: center;
+
+}
+.unidades nav a{
+    font-size: 20px;
+    gap: px;
+
+}
+
+.unidades nav a{
+
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 
 .Final p{
