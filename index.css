@@ -149,6 +149,7 @@ nav a{
 }
 .presentation p{
     gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .midiaabout{
@@ -157,4 +158,102 @@ nav a{
     width: 65%;
     justify-content: left;
     opacity: 0.5; /*Opacidade no video*/
+}
+
+/*Icone do whatsapp*/
+
+.zap {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999; /* para a imagem do whatsapp ficar por cima de todos icones da tela */
+}
+
+.zap img {
+    width: 70px;
+    border-radius: 100px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/*Produtos mais pedidos*/
+.maispedidos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 0;
+    background-color: white;
+}
+
+.maispedidos img{
+    opacity: 0.7;
+    width: 100%;
+    z-index: 1;
+}
+
+
+
+/* Container de destaque */
+.destaque {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    max-width: 320px;
+    margin-top: 30px;
+}
+
+
+/* Card */
+.card-1 {
+    width: 100%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+/* Imagem do card */
+.card-1 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Título */
+.card-1 h3 {
+    font-size: 1.2rem;
+    margin: 15px 10px 5px;
+    color: #333;
+}
+
+/* Preço */
+.card-1 p {
+    margin: 0 10px 15px;
+    font-weight: bold;
+    color: #555;
+    font-size: 1rem;
+}
+
+.destaque button{
+
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    
+}
+
+.destaque button:hover{
+    background-color: black;
+}
+
+/*Footer*/
+
+.footer h1{
+    font-size: 5px;
 }
