@@ -178,10 +178,7 @@ nav a{
 
 /*Produtos mais pedidos*/
 .maispedidos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    padding: 40px;
     margin: 0;
     background-color: white;
 }
@@ -191,21 +188,19 @@ nav a{
     width: 100%;
     z-index: 1;
 }
-
-
-
 /* Container de destaque */
 .destaque {
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    max-width: 320px;
-    margin-top: 30px;
+    display: flex;
+    flex-direction: column; /* empilha verticalmente */
+    gap: 20px; /* espaço entre os cards */
+    max-width: 320px; /* opcional, para limitar a largura */
+    margin: 30px auto; /* centralizar */
 }
 
 
 /* Card */
 .card-1 {
-    width: 100%;
+    width: 100%; /* ocupa toda a largura do container */
     background-color: #f9f9f9;
     border-radius: 10px;
     overflow: hidden;
@@ -213,7 +208,6 @@ nav a{
     text-align: center;
     display: flex;
     flex-direction: column;
-    z-index: 2;
 }
 
 /* Imagem do card */
@@ -245,7 +239,7 @@ nav a{
     color: white;
     padding: 20px;
     font-size: 20px;
-    
+    cursor: pointer;
 }
 
 .destaque button:hover{
@@ -253,7 +247,16 @@ nav a{
 }
 
 /*Footer*/
+.VideoIlu img{
+    width: 100%;
+    opacity: 0.8;
+    border-radius: 10px;
+}
 
-.footer h1{
-    font-size: 5px;
+
+
+.Final p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
