@@ -290,6 +290,19 @@ nav a{
     z-index: -1;                 /* Fica atrás do conteúdo */
 }
 
+/* Ajustes para dispositivos móveis */
+@media (max-width: 600px) {
+    .templateuni {
+        height: 300px;
+        background-attachment: scroll; /* Fallback: alguns celulares não lidam bem com 'fixed' */
+        padding: 10px;
+    }
+
+    .templateuni h1, .templateuni p {
+        font-size: 16px;
+    }
+}
+
 .unidades nav a{
     font-size: 20px;
 
