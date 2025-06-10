@@ -15,7 +15,7 @@
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="Navegacao/Produtos.html">Cardapio</a></li>
-                    <li><a href="">Unidades</a></li>
+                    <li><a href="#unidades">Unidades</a></li>
                     <li><a href="">Cupons</a></li>
                 </ul>
             </nav>
@@ -26,7 +26,7 @@
         </div>
 
         <!--Conteudo-->
-        <div class="conteudo">
+        <div class="conteudo" id="conteudo">
             <div class="text">
                 <h2>Hamburgaria HgBurger</h2>
                 <h1>Hambuger de verdade e Qualidade</h1>
@@ -44,7 +44,7 @@
         </div>
 
         <!--Aprsentacao-->
-        <section class="Sobre">
+        <section class="Sobre" id="Sobre">
             <div class="presentation">
                 <h3>Bem Vindos</h3>
                 <h1>Sobre Nós</h1>
@@ -53,8 +53,9 @@
                 </p>
             </div>
 
-            <video controls class="midiaabout">
+            <video class="midiaabout" loop autoplay muted playsinline> <!--Loop para o video ficar em reprodução automatica-->
                 <source src="Videos/midiaabout.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeos.
             </video>
         </section>
 
@@ -96,6 +97,7 @@
             </div>
         </section>
 
+        <!--Unidades-->
         <section class="templateuni" id="templateuni">
             <div class="unidades" id="unidades" >
                 <p>--------------------------------------------------------------</p>
@@ -103,10 +105,15 @@
                 <p>---------------------------------------------------------------</p>
                 <div>
                     <nav>
-                        <a href="">Santa Ines</a>
-                        <a href="">Santa Efigenia</a>
+                        <a href="#SantaInes">Santa Ines</a>
+                        <a href="">Santa Efigenia </a>
                         <a href="">Ouro Preto</a>
                     </nav>
+
+                    <div class="Santa Ines" id="SantaInes">
+                        <h1>Rua jose alfredo neves 378 - Santa Ines - Belo Horizonte</h1>
+                    </div>
+
                 </div>
             </div>
         </section>

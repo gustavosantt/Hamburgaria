@@ -6,10 +6,6 @@
     
 }
 
-body {
-    
-}
-
 .container{
      position: relative;
      overflow: hidden; /*Não deixa a propriedade transbordar */
@@ -23,6 +19,12 @@ body {
     position: relative;
     z-index: 1;
 }
+
+/*Menu ficar branco ao passar o mouse*/
+.header a:hover{
+    color: white;
+}
+
 nav ul{
     display: flex;
     align-items: center;
@@ -33,7 +35,6 @@ nav ul{
     padding: 1px;
     position: relative;
 }
-
 nav a{
     text-decoration: none; /*retirar os sublinhados das li*/
     color: black;
@@ -158,6 +159,7 @@ nav a{
     width: 65%;
     justify-content: left;
     opacity: 0.5; /*Opacidade no video*/
+    margin-left: 200px;
 }
 
 /*Icone do whatsapp*/
@@ -256,13 +258,15 @@ nav a{
 /*Unidades*/
 
 .templateuni{
-  
+    color: white;
     text-align: center;
+    background-image: url(img/unidade.jpg);
+    height: 500px;
+    opacity: 0.7;
 
 }
 .unidades nav a{
     font-size: 20px;
-    gap: px;
 
 }
 
