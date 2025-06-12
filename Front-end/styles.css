@@ -40,6 +40,15 @@ nav a{
     color: black;
 }
 
+nav ul a img{
+    position: relative;
+    left: 52%;
+    bottom: 25px;
+    width: 30px;
+    cursor: pointer;
+}
+
+
 /*Logo do header*/
 .logo{
     max-height: 60px;
