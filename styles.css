@@ -41,9 +41,9 @@ nav a{
 }
 
 nav ul a img{
-    position: relative;
-    left: 52%;
-    bottom: 25px;
+    position: absolute;
+    left: 95%;
+    top: 5px;
     width: 30px;
     cursor: pointer;
 }
@@ -325,12 +325,63 @@ nav ul a img{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*Footer*/
 .VideoIlu img{
     width: 100%;
     opacity: 0.8;
     border-radius: 10px;
 }
+
+
+/*Footer*/
+
+.rodape{
+    display: flex;
+    margin-left: 25%;
+    gap: 30px;
+    position: relative;
+    margin-right: 25%;
+   
+}
+
+.Final{
+    margin-top: 0;
+    background-color: black;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+}
+
+.caixa1{
+    width: 200 px;
+}
+
+.caixa1 img{
+    height: 300px;
+    width: 300px;
+    border-radius: 200px;
+    right: 100px;
+    
+}
+
+.caixa2{
+    background-color: yellow;
+    height: 300px;
+    width: 300px;
+}
+.caixa2 li a{
+    text-align: center;
+    
+
+}
+.caixa3{
+    background-color: blue;
+    height: 200px;
+    width: 300px;
+}
+
+
+
+
 
 .Final p{
     font-size: 15px;
