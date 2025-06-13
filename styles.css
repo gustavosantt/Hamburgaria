@@ -11,6 +11,7 @@
      overflow: hidden; /*Não deixa a propriedade transbordar */
 }
 
+/***Menu de navegacao*/
 .header{
     background-color: rgb(139, 100, 16);
     padding: 40px;
@@ -48,6 +49,19 @@ nav ul a img{
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    nav ul.menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 4px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        color: white;
+        padding: 10px 0;
+    }
+}
 
 /*Logo do header*/
 .logo{
@@ -82,6 +96,13 @@ nav ul a img{
      .conteudo{
         margin-top: 40px;
      }
+     
+}
+
+@media (max-width: 900px) {
+    .conteudo {
+        margin-top: 40px;
+    }
 }
 
 
@@ -137,7 +158,7 @@ nav ul a img{
     z-index: 2;
      
 }
-/*Estilização da apresentacao */
+/***Estilização da apresentacao ***/
 .Sobre{
     display: flex;
     position: relative;
@@ -178,6 +199,20 @@ nav ul a img{
     margin-left: 200px;
 }
 
+@media (max-width: 800px){
+    .presentation h3{
+
+        font-size: 18px;
+    }
+    .presentation	 h1{
+        font-size: 30px;
+    }
+    .presentation p{
+        font-size: 14px;
+    }
+
+}
+
 /*Icone do whatsapp*/
 
 .zap {
@@ -194,38 +229,41 @@ nav ul a img{
     cursor: pointer;
 }
 
-/***Produtos mais pedidos***/
+/*** Produtos mais pedidos ***/
 .maispedidos {
-    padding: 40px;
-    margin: 0;
-    background-color: white;
+    display: flex;
+    flex-direction: column; /* Organiza o título acima dos cards */
+    align-items: center;
+    margin-top: 15px;
 }
 
-.maispedidos img{
+
+.maispedidos img {
     opacity: 0.7;
     width: 100px;
     z-index: 1;
 }
+
 .destaque {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards por linha */
     gap: 20px;
     max-width: 1000px;
     margin: 30px auto;
 }
 
-.destaque h1{
-    font-size: 35px;
+/* Título */
+.destaque h1 {
+    font-size: 24px; /* Reduzindo o tamanho do texto */
     text-align: center;
-    position: absolute;
-    height: 10px;
-
+    position: relative;
+    width: 100%;
+    margin-bottom: 14px; /* Espaço entre o título e os cards */
 }
+
 
 /* Cards */
 .card-1 {
-    flex: 0 1 calc(33.33% - 40px); /* 3 cards por linha, subtraindo o gap */
     background-color: #f9f9f9;
     border-radius: 10px;
     overflow: hidden;
@@ -233,9 +271,8 @@ nav ul a img{
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    padding: 15px;
 }
-
 
 /* Imagem do card */
 .card-1 img {
@@ -245,7 +282,7 @@ nav ul a img{
     display: block;
 }
 
-/* Título */
+/* Título dentro do card */
 .card-1 h3 {
     font-size: 1.2rem;
     margin: 15px 10px 5px;
@@ -260,17 +297,48 @@ nav ul a img{
     font-size: 1rem;
 }
 
-.destaque button{
-
+/* Botão */
+.destaque button {
+    width: 100%;
     background-color: red;
     color: white;
-    padding: 20px;
-    font-size: 20px;
+    padding: 15px;
+    font-size: 18px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
-.destaque button:hover{
+.destaque button:hover {
     background-color: black;
+}
+
+/* 🔹 Responsividade para telas menores */
+@media (max-width: 800px) {
+    .destaque {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
+    }
+}
+
+@media (max-width: 600px) {
+    .destaque {
+        grid-template-columns: 1fr; /* 1 card por linha */
+    }
+
+    .card-1 {
+        max-width: 250px; /* Reduzindo tamanho */
+        padding: 10px;
+    }
+
+    /* Imagem menor */
+    .card-1 img {
+        height: 150px;
+    }
+
+    /* Botão menor */
+    .destaque button {
+        font-size: 16px;
+        padding: 12px;
+    }
 }
 
 
@@ -334,57 +402,94 @@ nav ul a img{
 
 /*Footer*/
 
-.rodape{
-    display: flex;
-    margin-left: 25%;
-    gap: 30px;
+/* 🏗️ Estilização do Rodapé */
+.final {
+    background-color: #111;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
     position: relative;
-    margin-right: 25%;
-   
+    height: 400px;
+    opacity: 0.9;
 }
 
-.Final{
-    margin-top: 0;
-    background-color: black;
-    opacity: 0.7;
-    height: 100%;
-    width: 100%;
+/* 🏢 Container Flexível */
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    cursor: pointer;
 }
 
-.caixa1{
-    width: 200 px;
+/* 📌 Caixa 1 - Logotipo */
+.caixa1 img {
+    width: 120px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    margin-top: 100px;
 }
 
-.caixa1 img{
-    height: 300px;
-    width: 300px;
-    border-radius: 200px;
-    right: 100px;
-    
+.caixa1 img:hover {
+    transform: scale(1.1);
 }
 
-.caixa2{
-    background-color: yellow;
-    height: 300px;
-    width: 300px;
+/* 🔗 Caixa 2 - Links de navegação */
+.caixa2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 100px;
 }
-.caixa2 li a{
+
+.caixa2 li {
+    list-style: none;
+}
+
+.caixa2 a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.caixa2 a:hover {
+    color: #ffd700;
+}
+
+/* 📌 Caixa 3 - Informações extras */
+.caixa3 h3 {
+    font-size: 22px;
+    color: #ffcc00;
+}
+
+
+/* 📱 Responsividade */
+@media (max-width: 768px) {
+    .rodape {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .caixa1 img {
+        width: 100px;
+    }
+
+    .caixa2 a {
+        font-size: 16px;
+    }
+}
+
+
+
+/**Direitos reservados*/
+.direitosdev{
     text-align: center;
-    
-
-}
-.caixa3{
-    background-color: blue;
-    height: 200px;
-    width: 300px;
+    color: #030303;
 }
 
-
-
-
-
-.Final p{
-    font-size: 15px;
+.direitosdev p{
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
 }
