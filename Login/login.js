@@ -9,7 +9,7 @@ function verificar() {
     if (login === "admin" && senha === "1234") {
         alert("Login realizado com sucesso!");
         console.log("Autorizado: Login realizado com sucesso."); // Depuração
-        window.location.href = "index.html"; 
+        window.location.href = "https://hamburgueriahg.netlify.app/"; 
         return true; // Permite o envio do formulário
         console.log("Não autorizado: Login ou senha incorretos."); 
         alert("Login ou senha incorretos.");

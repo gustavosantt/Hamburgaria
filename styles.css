@@ -203,9 +203,29 @@ nav ul a img{
         font-size: 30px;
     }
     .presentation p{
-        font-size: 14px;
+        font-size: 14px; /* Reduz o tamanho da fonte */
+        line-height: 1.8; /* Aumenta o espaçamento entre linhas */
+        margin: 15px; /* Adiciona mais espaço ao redor */
+
+    }
+    .midiaabout{
+        width: 100%;
+        margin-left: 20px;
+        
     }
 
+}
+
+@media (max-width: 600px){
+    .midiaabout{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .presentation p{
+        font-size: 14px; /* Reduz o tamanho da fonte */
+        line-height: 1.8; /* Aumenta o espaçamento entre linhas */
+        margin: 15px; /* Adiciona mais espaço ao redor */
+    }
 }
 
 /*Icone do whatsapp*/
