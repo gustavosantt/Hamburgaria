@@ -537,3 +537,10 @@ nav ul a img{
     margin-top: 10px;
     
 }
+
+@media (max-width: 600px) {
+    .direitosdev {
+        height: 100%; /*Ajusta a tela para comportar toda descrição*/ 
+        
+    }
+}
