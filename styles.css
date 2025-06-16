@@ -51,15 +51,10 @@ nav ul a img{
 
 @media (max-width: 768px) {
     nav ul.menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 4px;
-        left: 0;
-        width: 100%;
-        background-color: white;
-        color: white;
-        padding: 10px 0;
+    
+        flex-direction: column; /* Muda a direção para coluna em telas menores */
+        align-items: center; /* Centraliza os itens */
+        font-size: 20px;
     }
 }
 
@@ -422,6 +417,7 @@ nav ul a img{
     max-width: 1200px;
     margin: auto;
     cursor: pointer;
+    color: #ffcc00;
 }
 
 /* 📌 Caixa 1 - Logotipo */
@@ -459,10 +455,18 @@ nav ul a img{
     color: #ffd700;
 }
 
+.caixa3{
+    margin-top: 50px;
+}
+
+.caixa3 img{
+    width: 70px;
+}
+
 /* 📌 Caixa 3 - Informações extras */
 .caixa3 h3 {
     font-size: 22px;
-    color: #ffcc00;
+    
 }
 
 
@@ -471,6 +475,7 @@ nav ul a img{
     .rodape {
         flex-direction: column;
         text-align: center;
+        height: 100px;
     }
 
     .caixa1 img {
@@ -480,16 +485,35 @@ nav ul a img{
     .caixa2 a {
         font-size: 16px;
     }
+    .caixa3{
+        margin-top: 100px;
+
+    }
+    .caixa3 img{
+        width: 50px;
+        margin-top: 20px;
+    }
 }
 
 
 
 /**Direitos reservados*/
+
+.botao{
+    border-bottom: 1px white solid;
+    opacity: 0,5;
+}
+
 .direitosdev{
     text-align: center;
-    color: #030303;
+    color: #ebe5e5;
+    background-color: #111;
+    height: 40px;
+
 }
 
 .direitosdev p{
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    
 }
