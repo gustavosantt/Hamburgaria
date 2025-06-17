@@ -384,6 +384,11 @@ nav ul a img{
     opacity: 0.5;                /* Nível de transparência */
     z-index: -1;                 /* Fica atrás do conteúdo */
 }
+/*Alterar a cor dos Bairros para branco "neighborhoods" tradução => Bairros*/
+.neighborhoods a{
+    color: white;
+    padding: 20px;
+}
 
 /* Ajustes para dispositivos móveis */
 @media (max-width: 600px) {
