@@ -35,3 +35,9 @@
       requestAnimationFrame(animation);
     }
   });
+
+  //Ajustar e tela para o botao Hamburger
+
+  document.querySelector(".menu-icon").addEventListener("click", function () {
+    document.querySelector(".menu").classList.toggle("show");
+});
