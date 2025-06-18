@@ -152,6 +152,71 @@ nav {
     }
 }
 
+
+@media (max-width: 400px) {
+    nav ul.menu {
+
+        flex-direction: column;
+        /* Muda a direção para coluna em telas menores */
+        align-items: center;
+        /* Centraliza os itens */
+        font-size: 20px;
+    }
+
+    .menu {
+        display: none;
+        /* Oculta por padrão */
+        position: absolute;
+        top: 60px;
+        left: 100px;
+        width: 100px;
+        background-color: rgba(23, 35, 46, 0.6);
+        /* azul claro com 40% de opacidade */
+        ;
+        opacity: 0.95;
+        flex-direction: column;
+        align-items: center;
+        z-index: 999;
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    .menu img {
+        position: relative;
+        left: 70px;
+        top: -px;
+
+    }
+
+    .menu.show {
+        display: flex;
+        /* Mostra o menu quando ativado */
+    }
+
+    .menu-icon {
+        display: block;
+        /* Exibe o ícone do menu */
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .menu li:last-child {
+        border-bottom: none;
+    }
+}
+
+
 @media (max-width: 600px) {
     nav ul.menu {
 
@@ -244,21 +309,6 @@ nav {
     z-index: 1;
 }
 
-/*Midia para ajustar as letras na tela do celular*/
-@media (max-width:600px) {
-    .conteudo {
-        margin-top: 40px;
-    }
-
-}
-
-@media (max-width: 900px) {
-    .conteudo {
-        margin-top: 40px;
-    }
-}
-
-
 /*Estilizalaçao a apresentação junto ao botão*/
 .text {
     position: relative;
@@ -312,10 +362,36 @@ nav {
     position: relative;
     width: 90%;
     z-index: 1;
+}
+
+/*Midia para ajustar as letras na tela do celular*/
+
+/*ajuste para tela menores de 400px*/
+@media (max-width: 400px) {
+    .conteudo {
+        top: 15px;
+        font-size: 14px;
+        height: 400px;
+    }
+
+}
+/*ajuste para telas menores que 600px*/
+@media (max-width:600px) {
+    .conteudo {
+        top: 15px; /*ajuste na tela do celular para 15px do topo*/
+        height: 400px; /*ajuste na altera do fundo branco*/
+    }
 
 }
 
-/***Estilização da apresentacao ***/
+/*ajuste para telas menores que 900px*/
+@media (max-width: 900px) {
+    .conteudo {
+        margin-top: 40px;
+    }
+}
+
+/***Estilização da apresentacao Sobre***/
 .Sobre {
     display: flex;
     position: relative;
@@ -360,7 +436,9 @@ nav {
     /*Opacidade no video*/
     margin-left: 200px;
 }
+/*Media para ajustar a apresentação sobre nos */
 
+/*Media para ajustar telas em 800px*/
 @media (max-width: 800px) {
     .presentation h3 {
 
@@ -388,7 +466,7 @@ nav {
     }
 
 }
-
+/*Media para ajusta telas em 600px*/
 @media (max-width: 600px) {
     .midiaabout {
         width: 100%;
@@ -405,7 +483,7 @@ nav {
     }
 }
 
-/*Icone do whatsapp*/
+/**Icone do whatsapp**/
 
 .zap {
     position: fixed;
@@ -508,7 +586,7 @@ nav {
 .destaque button:hover {
     background-color: black;
 }
-
+/*Medias para ajuste dos card em telas menores*/
 /* 🔹 Responsividade para telas menores */
 @media (max-width: 800px) {
     .destaque {
