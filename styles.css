@@ -61,23 +61,6 @@ nav {
     /* Define um nível base para o menu */
 }
 
-.menu {
-    display: none;
-    /* Oculta por padrão */
-    position: fixed;
-    /* Fixa o menu na tela */
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #474747;
-    opacity: 0.95;
-    flex-direction: column;
-    align-items: center;
-    z-index: 999;
-    /* Prioridade alta para ficar acima de tudo */
-    transition: all 0.3s ease-in-out;
-}
-
 .menu-icon {
     display: none;
     /* Oculto em telas grandes */
