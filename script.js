@@ -1,3 +1,16 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const botao = document.getElementById("comprar");
+
+  /*botao.addEventListener("click", function () {
+    alert("Produto adicionado ao carrinho!");
+    
+    
+  });*/
+});
+
+
+
+
 // Bloco para rolagem suave dos links internos
  document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -37,7 +50,40 @@
   });
 
   //Ajustar e tela para o botao Hamburger
-
+/*
   document.querySelector(".menu-icon").addEventListener("click", function () {
     document.querySelector(".menu").classList.toggle("show");
+  
+  });*/
+
+//Registro de usuario 
+// Registro de usuário
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('form-registro');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // impede o recarregamento da página
+
+    console.log('Formulário enviado!');
+
+    // Pega os valores dos campos
+    const nom_user = document.getElementById('nome').value;
+    const tel_user = document.getElementById('telefone').value;
+    const senha_user = document.getElementById('senha').value;
+
+    // Envia para o backend
+    fetch('/registro', { // use a URL do seu servidor Node
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ nom_user, tel_user, senha_user })
+    })
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('mensagem').textContent = data.message;
+        console.log('Resposta do servidor:', data);
+      })
+      .catch(err => {
+        console.error('Erro ao enviar dados:', err);
+      });
+  });
 });
